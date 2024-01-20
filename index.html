@@ -1,57 +1,148 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="zh">
+
 <head>
-    <title>Dashboard</title>    
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./resources/home.svg" type="image/x-icon">
-        <style>
-            /* 使用CSS样式控制按钮布局 */
-            button {
-                margin-right: 10px; /* 添加右边距 */
-                font-family:'Times New Roman','HarmonyOs Sans SC','Microsoft YaHei UI'
-            }
+    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./resources/home.svg" type="image/x-icon">
+    <style>
+        /* 使用CSS样式控制按钮布局 */
         .powered-by {
             position: absolute;
-            top: 10px; /* 距离顶部的距离 */
-            right: 10px; /* 距离右侧的距离 */
-            color: gray; /* 文字颜色 */
-            font-size: 12px; /* 文字大小 */
+            top: 10px;
+            /* 距离顶部的距离 */
+            right: 10px;
+            /* 距离右侧的距离 */
+            color: gray;
+            /* 文字颜色 */
+            font-size: 12px;
+            /* 文字大小 */
         }
+
         .made-by {
             position: absolute;
-            top: 30px; /* 距离顶部的距离 */
-            right: 10px; /* 距离右侧的距离 */
-            color: gray; /* 文字颜色 */
-            font-size: 12px; /* 文字大小 */
+            top: 30px;
+            /* 距离顶部的距离 */
+            right: 10px;
+            /* 距离右侧的距离 */
+            color: gray;
+            /* 文字颜色 */
+            font-size: 12px;
+            /* 文字大小 */
         }
-        </style>
-    
+
+        .header {
+      position: fixed;
+      top: 10;
+      left: 10;
+      background-color: #3498db;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      display: flex;
+      align-items: center; /* 垂直居中 */
+    }
+
+    .button-container {
+      display: flex;
+      align-items: center; /* 垂直居中 */
+    }
+
+    .button {
+      background-color: #3498db;
+      color: white;
+      padding: 8px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .separator {
+      height: 20px; /* 设置竖线高度 */
+      width: 1px; /* 设置竖线宽度 */
+      background-color: white; /* 设置竖线颜色 */
+      margin: 0 10px; /* 设置竖线两侧的间距，可根据需要调整 */
+    }
+    button {
+            margin-right: 10px;
+            /* 添加右边距 */
+            font-family: 'Times New Roman', 'HarmonyOs Sans SC', 'Microsoft YaHei UI'
+        }
+    .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 0vh; /* 设置容器高度为视口高度，可根据需要调整 */
+}
+     #myButton {
+      display: inline-block;
+      animation: colorChange 10s infinite; /* 调整动画时长 */
+      font-family: 'Times New Roman', 'HarmonyOs Sans SC', 'Microsoft YaHei UI'
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: red; /* 开始颜色 */
+      }
+      10% {
+        color: orange; /* 中间颜色1 */
+      }
+      20% {
+        color: yellow; /* 中间颜色2 */
+      }
+      30% {
+        color: green; /* 中间颜色3 */
+      }
+      40% {
+        color: cyan; /* 中间颜色4 */
+      }
+      50% {
+        color: blue; /* 中间颜色5 */
+      }
+      60% {
+        color: purple; /* 中间颜色6 */
+      }
+      70% {
+        color: pink; /* 中间颜色7 */
+      }
+      80% {
+        color: brown; /* 中间颜色8 */
+      }
+      90% {
+        color: gray; /* 中间颜色9 */
+      }
+      100% {
+        color: red; /* 结束颜色，与开始颜色相同，形成循环 */
+      }
+    }
+    </style>
 </head>
 <body>
+    <div class="header">
+        <div class="button-container">
+          <button class="button" onclick="window.open('https://ad-closenn.github.io')">仪表盘</button>
+          <div class="separator"></div>
+          <button class="button" onclick="window.open('https://ad-closenn.github.io/project')">项目列表</button>
+        </div>
+      </div>
+      <br>
     <div class="powered-by">Powered by GitHub Pages</div>
     <div class="made-by">Made by Ad_closeNN</div>
-    <h1 style="font-size:50px;">Ad_closeNN 的主页导航 / GitHub Pages</h1>
-
-    <div style="font-size:40px;color:pink"><strong>PCL 2 home page</strong></div>
-    <div style="font-size:15px;color:gray">用于 Plain Craft Launcher 2 (PCL 2) 的自定义主页文件</div>
-    <button style="font-size:30px;" onclick="window.open('https://ad-closenn.github.io/aft', '_blank')" type="button">前往 Web</button>
-    <button style="font-size:30px;" type="button" onclick="window.open('https://github.com/ad-closenn/pcl2-home-page', '_blank')">GitHub 项目</button>
-
-    <div style="font-size:40px;color:pink"><strong>empty</strong></div>
-    <div style="font-size:15px;color:gray">展示Nachoneko猫猫！<strong>No Safe For Work!</strong></div>
-    <button style="font-size:30px;" onclick="window.open('tip/empty.html', '_blank')" type="button">前往 Web</button>
-    <button style="font-size:30px;" type="button" onclick="window.open('https://github.com/ad-closenn/empty', '_blank')">GitHub 项目</button>
-
-    <div style="font-size:40px;color:pink"><strong>Ad_Dev_Server</strong></div>
-    <div style="font-size:15px;color:gray">一个基于 Python 的 MCDReforged 插件</div>
-    <button style="font-size:30px;" type="button" onclick="window.open('https://github.com/ad-closenn/Ad_Dev_Server', '_blank')">GitHub 项目</button>
-
-    <div style="font-size:40px;color:pink"><strong>本站</strong></div>
-    <div style="font-size:15px;color:gray">搁着卡bug呢...我访问我自己... (也不是不行)</div>
-    <button style="font-size:30px;" onclick="window.open('https://ad-closenn.github.io/', '_blank')" type="button">前往 Web</button>
-    <button style="font-size:30px;" type="button" onclick="window.open('https://github.com/ad-closenn/ad-closenn.github.io', '_blank')">GitHub 项目</button>
-<footer>  
+    <br>
+    <h1 style="font-size:50px;display:inline-block;color:gray;">仪表盘 / Dashboard</h1>
+      <div style="font-size:40px;" class="center-container"><strong>欢迎来到 Ad_closeNN 的个人网站！</strong></div>
+      <br>
+      <img src="resources/20_tips.svg" style="display:inline-block"><div style="display:inline-block;font-size:35px;color:red;">&nbsp;Information</div>
+      <div style="display:inline-block;font-size:25px;">&nbsp&nbsp在这个网站里，存放有许多东西。比如<div style="color:green;display:inline-block;"><strong>PCL2-home-page</strong></div>存储库的网页版，展示<div style="color:#3498db;display:inline-block;">&nbsp;Nachoneko&nbsp</div>猫猫<div style="color:red;display:inline-block;"><strong>(No Safe For Work)</strong></div>的网页。这些都是由<a style="text-decoration:none;" href="https://pages.github.com/" target="_blank">&nbsp;GitHub Pages&nbsp;</a>服务器挂载的(本站也不例外)。</a></div>
+      <div style="display:inline-block;font-size:25px;">&nbsp&nbsp本站的网址是<div style="display:inline-block;color:gray">https://ad-closenn.github.io</div>， Github Pages 默认把开启 Pages 功能的存储库的网页放在了<div style="color:gray;display:inline">https://&lt;用户名&gt;.github.io/&lt;存储库名称&gt;</div>底下(当存储库名称为"&lt;用户名&gt;.github.io"时，无需"/&lt;存储库名称&gt;"部分)，所以我们可以依据这个特性可以直接访问网页。例如存储库名称为<div style="color:gray;display:inline-block;">abc</div>(开启了 GitHub Pages 功能)，用户名为<div style="color:gray;display:inline-block;">a</div>时，访问的网址应为<div style="color:gray;display:inline-block">https://a.github.io/abc</div>。以上的<div style="color:gray;display:inline">用户名</div>指的是<div style="color:gray;display:inline">存储库创建者</div>(不是你(访问者)的用户名)。</div>
+      <div style="font-size:30px;text-align:center;"><strong>准备好了吗？</strong></div>
+     <div style="text-align:center;">那么就点击这个神奇的按钮罢！</div>
+      <div style="text-align:center;">
+      <button style="font-size:60px;" onclick="window.open('https://ad-closenn.github.io/project', '_blank')" id="myButton">Get Start</button>
+      </div>
+      <footer>  
     <div style="text-align:center;"> <p>Copyright © Ad_closeNN 2024. All Rights Reserved.</p></div>
 </body>  
 </html>
