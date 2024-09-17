@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'HMOS';
+  src: url('https://developer.huawei.com/allianceCmsResource/resource/HUAWEI_Developer_VUE/libs/global/font/HarmonyOS_Sans_SC_Regular.91.woff2') format('woff2');
+}
+
+:root {
+    --vp-font-family-base: HarmonyOS Sans SC, HMOS, OPPO Sans, -apple-system, MiSans /* normal text font */
+    --vp-font-family-mono: JetBrains Mono /* code font */
+  }
