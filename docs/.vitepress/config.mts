@@ -12,7 +12,7 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: '教程', link: '/docs/GitHub Desktop GPG'},
       { text: '成员', link: '/team/members' },
-      { text: '成员', link: '/PCL' },
+      { text: '如何为 PCL2 做贡献', link: '/PCL/before/Get Started' },
       { text: 'GitHub', link: 'https://github.com/Ad-closeNN/ad-closenn.github.io' },
       {
           text: '无关链接',
@@ -46,7 +46,19 @@ export default defineConfig({
             { text: '成员列表', link: '/team/members' },
           ]
         }
-      ]
+    ],
+      '/PCL/': [
+        {
+          text: '如何为 PCL2 做贡献'
+        },
+        {
+          text: '开始之前',
+          items: [
+            { text: '前述', link: '/PCL/before/Get Started' },
+            { text: '常用链接', link: '/PCL/before/links' },
+          ]
+        }
+    ]
   },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Ad-closeNN/ad-closenn.github.io' }
@@ -58,7 +70,7 @@ export default defineConfig({
     lastUpdated: {
       text: '最后更新时间',
       formatOptions: {
-        dateStyle: 'full',
+        dateStyle: 'short',
         timeStyle: 'medium'
       }
     },

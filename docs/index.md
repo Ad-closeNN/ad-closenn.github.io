@@ -15,7 +15,7 @@ hero:
       link: https://github.com/Ad-closeNN/ad-closenn.github.io
     - theme: alt
       text: 如何为 PCL2 做贡献
-      link: https://github.com/Ad-closeNN/ad-closenn.github.io
+      link: /PCL/before/Get Started 
 
 features:
   - title: 全部教程
