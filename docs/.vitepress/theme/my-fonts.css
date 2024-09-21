@@ -4,6 +4,6 @@
 }
 
 :root {
-    --vp-font-family-base: HarmonyOS Sans SC, HMOS, OPPO Sans, -apple-system, MiSans /* normal text font */
+    --vp-font-family-base: HarmonyOS Sans SC Bold, HMOS, OPPO Sans, -apple-system, MiSans /* normal text font */
     --vp-font-family-mono: JetBrains Mono /* code font */
   }

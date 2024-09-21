@@ -10,7 +10,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
+      { text: '教程', link: '/docs/GitHub Desktop GPG'},
       { text: '成员', link: '/team/members' },
+      { text: '成员', link: '/PCL' },
       { text: 'GitHub', link: 'https://github.com/Ad-closeNN/ad-closenn.github.io' },
       {
           text: '无关链接',
@@ -21,21 +23,31 @@ export default defineConfig({
           ]
       }    
     ],
-    sidebar: [
-      {
-        text: '教程',
-        items: [
-          { text: 'Git 提交具有 Verified 标签', link: '/docs/GitHub Desktop GPG' },
-        ]
-      },
-      {
-        text: '',
-        items: [
-          { text: '成员列表', link: '/team/members' },
-          { text: 'GitHub 仓库', link: 'https://github.com/Ad-closeNN/ad-closenn.github.io'}
-        ]
-      }
+    sidebar: {
+      '/docs/': [
+        {
+          text: '教程',
+          items: [
+            { text: 'Git 提交具有 Verified 标签', link: '/docs/GitHub Desktop GPG' },
+          ]
+        },
+        {
+          text: '',
+          items: [
+            { text: '成员列表', link: '/team/members' },
+            { text: 'GitHub 仓库', link: 'https://github.com/Ad-closeNN/ad-closenn.github.io'}
+          ]
+        }
     ],
+      '/team/': [
+        {
+          text: '成员',
+          items: [
+            { text: '成员列表', link: '/team/members' },
+          ]
+        }
+      ]
+  },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Ad-closeNN/ad-closenn.github.io' }
     ],

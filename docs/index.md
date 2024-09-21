@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/Ad-closeNN/ad-closenn.github.io
+    - theme: alt
+      text: 如何为 PCL2 做贡献
+      link: https://github.com/Ad-closeNN/ad-closenn.github.io
 
 features:
   - title: 全部教程
