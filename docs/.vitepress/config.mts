@@ -51,7 +51,7 @@ export default defineConfig({
       }
     },
     footer: {
-      message: '基于 <a href="https://github.com/Ad-closeNN/ad-closenn.github.io/blob/main/LICENSE" target="_blank">MIT</a> 许可发布',
+      message: '基于 <a href="https://github.com/Ad-closeNN/ad-closenn.github.io/blob/main/LICENSE" target="_blank">MIT</a> 许可发布<br><a href="https://icp.gov.moe/?keyword=20245460" target="_blank">萌ICP备20245460号</a>',
       copyright: 'Copyright © 2024 <a href="https://github.com/Ad-closeNN/" target="_blank">Ad-closeNN</a>'
     },
     docFooter: {
